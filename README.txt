@@ -1,6 +1,6 @@
-Cassandra, Node.js, and Angular.js Demo
+Cassandra, Clojure, and Angular.js Demo
 
-Hi, this silly little web app was written by Mitchell Kyle as simplistic demo of Apache Cassandra, Node.js and Angular.js. 
+Hi, this silly little web app was written by Mitchell Kyle as simplistic demo of Apache Cassandra, Clojure, Compojure, and Angular.js. 
 It is under the Apache License 2.0 so it is free to explore.
 
 To use:
