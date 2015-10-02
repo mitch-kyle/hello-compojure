@@ -1,0 +1,13 @@
+<div>
+  <div ng-hide="commentCtrl.comments.length > 0" class="panel faded">
+    <h4 class="indent">No comments yet, why don't you say something nice?</h4>
+  </div>
+  <div ng-show="commentCtrl.comments.length > 0">
+    <div class="panel faded"><h4 class="indent">Here's what some people have been saying:</h4></div>
+		<div class="panel panel-error" ng-show="commentCtrl.error != null">{{commentCtrl.error}}</div>
+		<div class="faded panel" ng-repeat="comment in commentCtrl.comments">
+		  <h4 class="text-right">"<cite>{{ comment.body }}</cite>" <small>&nbsp;- {{ comment.author }} @ {{comment.date_posted | date:"yyyy-mm-dd HH:MM"}} <a href ng-click="commentCtrl.delete(comment.id)"><span class="glyphicon glyphicon-remove grey"></span></a>&nbsp;</small></h4>
+		</div>
+  </div>
+  <comment-form></comment-form>
+</div>

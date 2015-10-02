@@ -1,0 +1,31 @@
+body {
+	background-image:url("/images/background.png");
+	background-repeat:repeat;
+}
+.faded {
+	background:rgb(255, 255, 255);
+    background:rgba(255, 255, 255, .4);	
+}
+.grey {
+	color:rgb(124, 124, 124);
+}
+.indent {
+	padding: 0 1em;
+}
+.pad-bottom {
+	padding-bottom: 3em; 	
+}
+.pad-top {
+	padding-top: 3em; 	
+}
+.subheading {
+	font-size:20px;
+	padding: 0 2em;
+}
+.heading{
+	font-size: 40px;
+	padding: 0 .5em;
+}
+.form {
+	padding: 2em 2em;
+}

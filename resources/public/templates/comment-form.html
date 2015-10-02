@@ -1,0 +1,16 @@
+<div class="faded pad-bottom">
+  <form class="form" ng-submit="formCtrl.submit()">
+    <h3>Post a Comment:</h3>
+    <div class="form-group">
+      <label for="author">Name: </label>
+      <input ng-model="formCtrl.comment.author" class="form-control" placeholder="Enter email address" type="email" id="author"/>
+    </div>
+    <div class="form-group">
+      <label for="body">Comment: </label>
+      <input type="text" ng-model="formCtrl.comment.body" id="body" class="form-control" placeholder="Enter comment"></input>
+    </div>
+    <div class="form-group">
+      <input type="submit" class="pull-right btn btn-primary" value="Submit"></input>
+    </div>
+  </form>
+</div>
