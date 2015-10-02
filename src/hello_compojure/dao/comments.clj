@@ -51,7 +51,7 @@
   (wrap-error-logger (fn [] 
                       (cql/update (database/connection)
                                   table-name
-                                  (where [[= :id (:id id)]])
+                                  (where [[= :id (:id data)]])
                                   (merge  {:author (:author data)}
                                           {:body (:body data)}
                                           {:posted (.getTime (new java.util.Date))})))))
